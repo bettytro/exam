@@ -55,7 +55,6 @@ const EditVenue = ({ venue, onVenueUpdated, onVenueDeleted }) => {
       };
         const id = venue.id;
       const success = await editVenue(id, updatedVenue);
-      console.log(success.data);
       onVenueUpdated(success.data);
     } catch (error) {
       console.error(error);
