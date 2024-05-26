@@ -20,7 +20,6 @@ const Login = () => {
     
         fetchUser();
             // eslint-disable-next-line
-
     }, []);
 
     const onLogin = async (user) => {
