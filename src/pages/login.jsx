@@ -19,7 +19,9 @@ const Login = () => {
         };
     
         fetchUser();
-    }, [navigate]);
+            // eslint-disable-next-line
+
+    }, []);
 
     const onLogin = async (user) => {
         setLoading(true);
