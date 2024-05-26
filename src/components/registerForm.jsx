@@ -85,10 +85,11 @@ const RegisterForm = ({ onRegister, vm }) => {
       </div>
       <div>
         <label className="block text-gray-700 text-sm font-bold mb-1">
-          Bio
+          Bio <span className="text-red-500 ml-1">*</span>
         </label>
         <textarea
           name="bio"
+          required
           rows={5}
           value={formData.bio}
           onChange={handleChange}
@@ -97,23 +98,25 @@ const RegisterForm = ({ onRegister, vm }) => {
       </div>
       <div>
         <label className="block text-gray-700 text-sm font-bold mb-1">
-          Avatar URL
+          Avatar URL <span className="text-red-500 ml-1">*</span>
         </label>
         <input
           type="url"
           name="avatar.url"
           value={formData.avatar.url}
+          required
           onChange={handleChange}
           className="appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
       <div>
         <label className="block text-gray-700 text-sm font-bold mb-1">
-          Avatar Alternative Text (Required for Accessibility)
+          Avatar Alternative Text (Required for Accessibility) <span className="text-red-500 ml-1">*</span>
         </label>
         <input
           type="text"
           name="avatar.alt"
+          required
           value={formData.avatar.alt}
           onChange={handleChange}
           className="appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
