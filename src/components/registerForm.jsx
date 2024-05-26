@@ -44,7 +44,7 @@ const RegisterForm = ({ onRegister, vm }) => {
     >
       <div>
         <label className="block text-gray-700 text-sm font-bold mb-1">
-          Name
+          Name <span className="text-red-500 ml-1">*</span>
         </label>
         <input
           type="text"
@@ -57,7 +57,7 @@ const RegisterForm = ({ onRegister, vm }) => {
       </div>
       <div>
         <label className="block text-gray-700 text-sm font-bold mb-1">
-          Email
+          Email <span className="text-red-500 ml-1">*</span>
         </label>
         <input
           type="email"
@@ -72,7 +72,7 @@ const RegisterForm = ({ onRegister, vm }) => {
       </div>
       <div>
         <label className="block text-gray-700 text-sm font-bold mb-1">
-          Password
+          Password <span className="text-red-500 ml-1">*</span>
         </label>
         <input
           type="password"
