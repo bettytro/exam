@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 function ExploreGrid({ griddata }) {
+    // eslint-disable-next-line
     const [loadedIndices, setLoadedIndices] = useState([]);
 
     const handleImageLoad = (index) => {

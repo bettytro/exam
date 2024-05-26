@@ -19,7 +19,7 @@ const Login = () => {
         };
     
         fetchUser();
-    }, []);
+    }, [navigate]);
 
     const onLogin = async (user) => {
         setLoading(true);

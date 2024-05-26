@@ -31,7 +31,7 @@ const Profile = () => {
     if (loggedInUser && user && loggedInUser.id === user.id) {
       setIsOwner(true);
     }
-  }, [username]);
+  }, [username, user, loggedInUser]);
 
   const handleSave = async () => {
     await updateProfile(username, avatarUrl, avatarAlt);
