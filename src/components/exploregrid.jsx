@@ -31,6 +31,7 @@ function ExploreGrid({ griddata }) {
     return (
         <section className="bg-primary text-sec w-screen">
             <div className="mx-auto w-full max-w-[1600px] p-8 py-16 flex flex-col">
+
                 <h2 className="text-title text-4xl font-black my-8">
                     Explore Venues
                 </h2>
