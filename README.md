@@ -1,4 +1,4 @@
-# Your project title
+# Holidaze
 
 ![image](holidaze.png)
 
